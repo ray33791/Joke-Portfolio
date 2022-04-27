@@ -1,0 +1,235 @@
+@media (max-width: 1439px)
+    .sidepanel
+        display: none
+    .resume
+        .container
+            max-width: 1080px
+
+
+@media (max-width: 1200px)
+    .container
+        max-width: 960px
+    .about
+        &__wrapper
+            grid-template-columns: 400px 520px
+            grid-gap: 40px
+        &__skills
+            column-gap: 20px
+            grid-template-columns: repeat(2,minmax(115px,auto))/repeat(2,250px)
+            &-item
+                grid-template-columns: 40px 195px
+                column-gap: 20px
+    .resume
+        .container
+            max-width: 870px
+        &__wrapper
+            grid-template-columns: repeat(2, 280px)
+    .skills
+        &__wrapper
+            grid-template-columns: repeat(3,270px)
+            grid-column-gap: 60px
+            grid-row-gap: 55px
+        &__ratings
+            grid-template: repeat(3,minmax(70px,auto))/repeat(2,350px)
+            column-gap: 210px
+    .portfolio
+        &__wrapper
+            grid-template-columns: repeat(auto-fit, 280px)
+            grid-auto-rows: 280px
+            justify-content: space-around
+            row-gap: 35px
+            .horizontal, .vertical
+                grid-row: unset
+                grid-column: unset
+    .contacts
+        &__wrapper
+            padding: 0 35px 0 52px
+            grid-template-columns: 330px 585px
+        &__photo
+            width: 80%
+            height: 80%
+
+    
+
+
+@media (max-width: 992px)
+    .container
+        max-width: 720px
+    .title
+        &_fz36
+            font-size: 30px
+    .divider
+        margin: 15px auto 0 auto
+    .about
+        &__wrapper
+            grid-template-columns: 300px 380px
+        &__skills
+            grid-template-columns: 300px
+            grid-auto-rows: minmax(115px,auto)
+            &-item
+                grid-template-columns: 40px 320px
+    .resume
+        .container
+            max-width: 650px
+        &__wrapper
+            grid-template-columns: repeat(2, 280px)
+            column-gap: 80px
+            padding: 0px
+    .skills
+        &__wrapper
+            grid-template-columns: repeat(2,250px)
+            grid-column-gap: 100px
+            grid-row-gap: 50px
+        &__ratings
+            grid-template: repeat(3,minmax(70px,auto))/repeat(1,350px)
+            column-gap: 210px
+            row-gap: 20px
+            justify-content: center
+            &-item
+                row-gap: 20px
+    .price
+        &__wrapper
+            grid-template-columns: repeat(auto-fit, 350px)
+    .contacts
+        &__photo
+            display: none
+        &__wrapper
+            grid-template-columns: 585px
+            justify-content: center
+            justify-items: baseline
+        &__input
+            &:nth-child(2)
+                margin-left: 10px
+                
+
+@media (max-width: 768px)
+    .container
+        max-width: 540px
+    .title
+        &_fz48
+            font-style: 28px
+    .promo
+        &__title
+            line-height: 39px
+            width: 300px
+    .about
+        padding-top: 40px
+        &__wrapper
+            grid-template: 400px auto auto / 300px
+        &__photo
+            grid-row: 1
+        &__skills
+            grid-template-columns: repeat(2, 260px)
+            &-item
+                grid-template-columns: 40px 200px
+                column-gap: 20px
+        &__text
+            grid-column-start: 1
+            grid-column-end: 2
+    .resume
+        padding-top: 60px
+        .container
+            max-width: 456px
+        &__wrapper
+            grid-template-columns: 265px
+            grid-gap: 85px
+            justify-content: center
+    .skills
+        &__wrapper
+            padding-left: 0px
+            grid-template-columns: 270px
+            grid-column-gap: 100px
+            grid-row-gap: 50px
+            justify-content: center
+    .portfolio
+        padding-top: 40px
+    .price
+        padding-top: 40px
+        &__wrapper
+            margin-top: 20px
+            justify-content: center
+
+
+
+@media (max-width: 576px)
+    .container
+        width: 100%
+        padding: 0 10px
+    .title
+        &_fz48
+            font-size: 26px
+        &_fz36
+            font-size: 24px
+    .hamburger
+        right: 20px
+    .menu
+        &__block
+            width: 250px
+            padding-left: 20px
+
+    .promo
+        &__btns
+            margin-top: 30px
+    .about
+        &__wrapper
+            grid-template: 340px auto auto / 250px
+            justify-content: center
+        &__skills
+            grid-template-columns: 1fr
+    .resume
+        &__subtitle
+            font-size: 24px
+            line-height: 36px
+        &__wrapper
+            grid-template-columns: 265px
+    .skills
+        &__subtitle
+            padding-top: 20px
+            font-size: 24px
+            line-height: 36px
+        &__wrapper
+            padding: 50px
+            grid-template-columns: 270px
+            grid-column-gap: 100px
+            grid-row-gap: 50px
+            justify-content: center
+    .portfolio
+        padding-top: 40px
+    .price
+        &__wrapper
+            grid-template-columns: repeat(auto-fit, 300px)
+    .contacts 
+        padding-bottom: 50px
+        &__wrapper
+            grid-template-columns: 300px
+        &__form 
+            grid-template: 45px 45px 190px minmax(45px, auto) / 1fr
+        &__title
+            margin-bottom: 26px
+        &__subtitle
+            font-size: 24px
+            line-height: 36px
+        
+        &__input
+            &:nth-child(2)
+                margin-left: 0px
+        
+        &__textarea 
+            grid-column: unset
+            width: 100%
+        
+        &__triggers 
+            grid-column: unset
+            grid-template-columns: 1fr
+            column-gap: unset
+            row-gap: 20px
+        
+        &__btn 
+            order: 2
+            max-width: 220px
+            margin: 0 auto
+        
+        &__policy 
+            width: 180px
+            margin: 0 auto
+            line-height: 18px
